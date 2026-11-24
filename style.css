@@ -1,0 +1,166 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: #20232a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #61dafb;
+}
+
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9f2f7;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.greeting {
+    color: #287c9e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #20232a;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #287c9e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #1b5d78;
+}
+
+/* About and Contact Pages */
+.page-content {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.page-content h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.content-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-card h2 {
+    color: #287c9e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-card h2:first-child {
+    margin-top: 0;
+}
+
+.content-card p {
+    margin-bottom: 15px;
+}
+
+
+.contact-info {
+    margin: 25px 0;
+}
+
+.contact-info h3 {
+    color: #287c9e;
+    margin-top: 15px;
+}
+
+
+footer {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .content-card {
+        padding: 20px;
+    }
+}
